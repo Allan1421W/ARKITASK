@@ -4,49 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encargado</title>
+    <title>Gerente</title>
     <link rel="stylesheet" href="../Static/menu.css">  
     <link rel="icon" href="../Static/Img/LogoSolo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
 </head>
 <body>
     <nav>
-      <ul class="tabs">
-        <li>
-            <a href="#" class="logo"> <img src="../Static/Img/LogoSolo.png" alt="Logo" width="60px" height="50px">
-              <span class="nav-item-1"><img src="../Static/Img/Nombre.png" alt="Nombre" width="100px"></span>
+        <ul class="tabs">
+          <li>
+              <a href="#" class="logo"> <img src="../static/img/LogoSolo.png" alt="Logo" width="60px" height="50px">
+                <span class="nav-item-1"><img src="../static/img/Nombre.png" alt="Nombre" width="100px"></span>
+              </a>
+          </li>
+          <li>
+            <a href="#tab1"> <img src="../static/img/usuarios.png" alt="Usuario" width="40px">
+              <span class="nav-item">Usuarios</span>
             </a>
-        </li>
-        <li>
-          <a href="#tab1" class="option"> <img src="../Static/Img/proyecto.png" alt="Proyectos" width="40px">
-            <span class="nav-item">Proyectos</span>
-          </a>
-        </li>
-        <li>
-          <a href="#tab2" class="option"> <img src="../Static/Img/asistencia.png" alt="Asistencia" width="40px">
-            <span class="nav-item">Asistencia</span>
-          </a>
-        </li>
-        <li>
-          <a href="#tab3" class="option"> <img src="../Static/Img/grupoTrabajo.png" alt="Grupos de Trabajo" width="40px">
-            <span class="nav-item">Actividades</span>
-          </a>
-        </li>
-        <li>
-          <a href="#tab4" class="option"> <img src="../Static/Img/entregables.png" alt="Entregables" width="40px">
-          <span class="nav-item">Entregables</span>
-          </a>
-        </li>
-        <li>
-            <a href="../Template/index.html" class="item-out" > <img src="../Static/Img/salir.png" alt="Salir" width="40px">
+          </li>
+          <li>
+            <a href="#tab2" class="option"> <img src="../Static/Img/proyecto.png" alt="Proyectos" width="40px">
+              <span class="nav-item">Proyectos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab3"> <img src="../static/img/asistencia.png" alt="Asistencia" width="40px">
+              <span class="nav-item">Asistencia</span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab4"> <img src="../static/img/grupoTrabajo.png" alt="Grupo de Trabajo" width="40px">
+              <span class="nav-item">Grupo de Trabajo</span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab5"> <img src="../static/img/actividades.png" alt="Actividades" width="40px">
+              <span class="nav-item">Actividades</span>
+            </a>
+          </li>
+          <li>
+            <a href="#tab6" id="entregables"> <img src="../static/img/entregables.png" alt="Entregables" width="40px">
+            <span class="nav-item">Entregables</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Template/index.html" class="item-out"> <img src="../static/img/salir.png" alt="Salir" width="40px">
               <span class="nav-item">Salir</span>
             </a>
-        </li>
-      </ul>
-    </nav>
+          </li>
+        </ul>
+      </nav>
     <div class="sections">
+        <!-- Menu Usuario -->
+        <!-- Agregar buscador de usuarios -->
       <div class="container">
         <article id="tab1">
+            <div class="card-header">
+              <div class="row justify-content-center">
+                <div class="col-4 col-md-auto">
+                  <h4>Usuarios</h4>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-4 col-md-auto">
+                    <!-- Agregar interfaz de nuevo usuario -->
+                  <a href="#">
+                    <button type="submit" class="btn btn-warning">Agregador Usuario</button>
+                  </a>
+                </div>
+              </div><br>
+              <div class="card-header">
+                <div class="row align-items-start">
+                    <div class="col">
+                      <p>Nombre</p>
+                    </div>
+                    <div class="col">
+                      <p>Apellido</p>
+                    </div>
+                    <div class="col">
+                      <p>Correo</p>
+                    </div>
+                    <div class="col">
+                      <p>Documento</p>
+                    </div>
+                    <div class="col">
+                      <p>Telefono</p>
+                    </div>
+                    <div class="col">
+                        <p>Estado</p>
+                    </div>
+                    <div class="col-1">
+                        <p></p>
+                    </div>
+                  </div>
+                  <div class="row align-items-start">
+                    <div class="col">
+                      <p>Claudia Flor</p>
+                    </div>
+                    <div class="col">
+                      <p>Pacheco</p>
+                    </div>
+                    <div class="col">
+                      <p>claudiapache09@gmail.com</p>
+                    </div>
+                    <div class="col">
+                      <p>1051882416</p>
+                    </div>
+                    <div class="col">
+                      <p>3159168815</p>
+                    </div>
+                    <div class="col">
+                        <p>Activo</p>
+                    </div>
+                    <div class="col">
+                        <!-- Agregar simbolo del boton -->
+                        <button type="button" class="btn btn-warning btn-circle btn-lg"></button>
+                        <button type="button" class="btn btn-primary btn-circle btn-lg"></button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </article>
+      </div>
+      <!-- Menu proyectos -->
+      <div class="container">
+        <article id="tab2">
             <div class="card-header">
               <div class="row justify-content-center">
                 <div class="col-4 col-md-auto">
@@ -55,6 +137,7 @@
               </div>
               <div class="row justify-content-center">
                 <div class="col-4 col-md-auto">
+                    <!-- Agregar interfaz de nuevo proyecto -->
                   <a href="#">
                     <button type="submit" class="btn btn-warning">Nuevo Proyecto</button>
                   </a>
@@ -88,10 +171,17 @@
             </div>
         </article>
       </div>
+      <!-- Menu Asistencia-->
       <div class="container">
-        <article id="tab2">
-          <span>Asistencia</span>
+        <article id="tab3">
             <div class="card-header">
+                <div class="row justify-content-start">
+                    <div class="col">
+                        <a href="#">
+                          <button type="submit" class="btn btn-danger">Reporte</button>
+                        </a>
+                    </div>
+                </div>
               <div class="row justify-content-between">
                 <div class="col" >
                   <p>Horario de Ingreso</p>
@@ -134,12 +224,19 @@
                   <p>14:14:04</p>
                 </div>
               </div>
+              <div class="row align-items-start">
+                <div class="col">
+                  <a href="#">
+                    <button type="submit" class="btn btn-secondary">Crear Asistencia</button>
+                  </a>
+                </div>
+              </div>
             </div>
         </article>
       </div>
+      <!-- Menu Grupos de trabajo-->
       <div class="container">
-        <article id="tab3">
-          <span>Actividades</span>
+        <article id="tab4">
             <div class="card-header">
               <div class="row justify-content-center">
                 <div class="col-4 col-md-auto">
@@ -175,9 +272,58 @@
             </div>
         </article>
       </div>
+      <!-- Menu Actividades -->
+      <!-- Agregar calendario y contenedor de calendario donde esta el boton de nueva actividad -->
       <div class="container">
-        <article id="tab4">
-          <span>Entregables</span>
+        <article id="tab5">
+            <div class="card-header">
+              <div class="row justify-content-center">
+                <div class="col-4 col-md-auto">
+                  <h4>Listado de Entregables</h4><br><br>
+                </div>
+              </div>
+              <div class="row align-items-start">
+                <div class="col">
+                  <p>Fecha de Entrega</p>
+                </div>
+                <div class="col">
+                  <p>Imagen Entregable</p>
+                </div>
+                <div class="col">
+                  <p>Comentarios</p>
+                </div>
+                <div class="col">
+                  <p>Estado</p>
+                </div>
+                <div class="col">
+                  <p>Detalles</p>
+                </div>
+              </div>
+              <div class="row align-items-start">
+                <div class="col">
+                  <p>2021-08-14</p>
+                </div>
+                <div class="col">
+                  <img src="" alt="Sin Vista Previa">
+                </div>
+                <div class="col">
+                  <p>Imagen de los planos</p>
+                </div>
+                <div class="col">
+                  <p>Entregable rechazado</p>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <button type="submit" class="btn btn-outline-dark">Detalles</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </article>
+      </div>
+      <!-- Menu Entregables -->
+      <div class="container">
+        <article id="tab6">
             <div class="card-header">
               <div class="row justify-content-center">
                 <div class="col-4 col-md-auto">
@@ -226,5 +372,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="../Static/main.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
