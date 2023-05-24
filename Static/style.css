@@ -2,6 +2,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
 .Logos{
     width: 20px;
 }
@@ -135,4 +138,9 @@ nav .col-2{
 
 #options li{
     list-style: none;
+}
+
+#register{
+    background-image: url('../Static/Img/816xij7e.png');
+    font-weight: bold;
 }
