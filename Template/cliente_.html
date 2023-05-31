@@ -4,57 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerente</title>
-    <link rel="stylesheet" href="../Static/menu.css">  
+    <title>Cliente</title>
+    <link rel="stylesheet" href="../Static/main.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="icon" href="../Static/Img/LogoSolo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <nav>
-        <ul class="tabs">
-          <li>
-              <a href="#" class="logo"> <img src="../static/img/LogoSolo.png" alt="Logo" width="60px" height="50px">
-                <span class="nav-item-1"><img src="../static/img/Nombre.png" alt="Nombre" width="100px"></span>
-              </a>
-          </li>
-          <li>
-            <a href="#tab1"> <img src="../static/img/usuarios.png" alt="Usuario" width="40px">
-              <span class="nav-item">Usuarios</span>
+        <span id="open-close"><i class='bx bx-menu'></i></span>
+        <img src="../Static/Img/LogotipoBlan.png" alt="Arkitask" width="135px">
+    </nav>
+    <aside id="aside" class="tabs">
+        <div class="container-svg">
+            <a href="#tab1" class="a">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg>
+                    <span>Usuarios</span>
+                </div>
             </a>
-          </li>
-          <li>
-            <a href="#tab2" class="option"> <img src="../Static/Img/proyecto.png" alt="Proyectos" width="40px">
-              <span class="nav-item">Proyectos</span>
+            <a href="#tab2" class="a">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M2.165 19.551c.186.28.499.449.835.449h15c.4 0 .762-.238.919-.606l3-7A.998.998 0 0 0 21 11h-1V8c0-1.103-.897-2-2-2h-6.655L8.789 4H4c-1.103 0-2 .897-2 2v13h.007a1 1 0 0 0 .158.551zM18 8v3H6c-.4 0-.762.238-.919.606L4 14.129V8h14z"></path></svg>
+                <span>Proyectos</span>
+            </div>
             </a>
-          </li>
-          <li>
-            <a href="#tab3"> <img src="../static/img/asistencia.png" alt="Asistencia" width="40px">
-              <span class="nav-item">Asistencia</span>
+            <a href="#tab3" class="a">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 10H7v-2h5v2zm5-4H7V8h10v2z"></path></svg>
+                <span>Asistencia</span>
+            </div>
             </a>
-          </li>
-          <li>
-            <a href="#tab4"> <img src="../static/img/grupoTrabajo.png" alt="Grupo de Trabajo" width="40px">
-              <span class="nav-item">Grupo de Trabajo</span>
+            <a href="#tab4" class="a">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm1.5 1H8c-3.309 0-6 2.691-6 6v1h15v-1c0-3.309-2.691-6-6-6z"></path><path d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"></path></svg>
+                <span>Grupo de Trabajo</span>
+            </div>
             </a>
-          </li>
-          <li>
-            <a href="#tab5"> <img src="../static/img/actividades.png" alt="Actividades" width="40px">
-              <span class="nav-item">Actividades</span>
+            <a href="#tab5" class="a">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M6.012 18H21V4a2 2 0 0 0-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1zM8 6h9v2H8V6z"></path></svg>
+                <span>Actividades</span>
+            </div>
             </a>
-          </li>
-          <li>
-            <a href="#tab6" id="entregables"> <img src="../static/img/entregables.png" alt="Entregables" width="40px">
-            <span class="nav-item">Entregables</span>
+            <a href="#tab6" class="a">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M4 2v18H3v2h4v-2H6v-5h13a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H6V2H4zm4 3v2h2V5h2v2h2V5h2v2h2v2h-2v2h2v2h-2v-2h-2v2h-2v-2h-2v2H8v-2H6V9h2V7H6V5h2z"></path><path d="M8 9h2v2H8zm4 0h2v2h-2zm-2-2h2v2h-2zm4 0h2v2h-2z"></path></svg>
+                <span>Entregables</span>
+            </div>
             </a>
-          </li>
-          <li>
-            <a href="../Template/index.html" class="item-out"> <img src="../static/img/salir.png" alt="Salir" width="40px">
-              <span class="nav-item">Salir</span>
+            <a href="#tab7" class="a">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zm6-3.586-3.707-3.707 1.414-1.414L11 15.586l4.293-4.293 1.414 1.414L11 18.414zM5 7h14v2H5V7z"></path></svg>
+                    <span>Proyectos Terminados</span>
+                </div>
             </a>
-          </li>
-        </ul>
-      </nav>
-    <div class="sections">
+        </div>
+    </aside>
+    <div class="sections" id="content">
         <!-- Menu Usuario -->
         <!-- Agregar buscador de usuarios -->
       <div class="container " id="usuario">
@@ -369,9 +376,29 @@
             </div>
         </article>
       </div>
+      <div class="container">
+        <article id="tab7">
+          <span>Proyectos Terminados</span>
+            <div class="card-header">
+              <div class="row justify-content-between">
+                <div class="col-4 border">
+                  <h4>askdjlaskjfklajdf</h4><br><br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia reprehenderit veniam dignissimos ad reiciendis iste quidem tempore ab dolor.</p>
+                </div>
+                <div class="col-4 border">
+                  <h4>askdjlaskjfklajdf</h4><br><br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia reprehenderit veniam dignissimos ad reiciendis iste quidem tempore ab dolor.</p>
+                </div>
+                <div class="col-4 border">
+                  <h4>askdjlaskjfklajdf</h4><br><br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia reprehenderit veniam dignissimos ad reiciendis iste quidem tempore ab dolor.</p>
+                </div>
+              </div>
+            </div>
+        </article>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="../Static/main.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
