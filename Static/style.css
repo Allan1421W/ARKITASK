@@ -1,10 +1,76 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-
-body{
-    overflow-x: hidden;
+.inactive{
+    display: none;
 }
+
+/*Usuarios*/
+    #list-usuarios{
+        margin-left: 220px;
+        height: 100vh;
+    }
+    #list-usuarios:hover{
+        margin-left: 50px;
+    }
+
+/*Proyectos*/
+    #list-proyecto{
+        margin-left: 220px;
+        height: 100vh;
+    }
+    #list-proyecto:hover{
+        margin-left: 50px;
+    }
+
+/*Asistencia*/
+    #list-asistencia{
+        margin-left: 220px;
+        height: 100vh;
+    }
+    #list-asistencia:hover{
+        margin-left: 50px;
+    }
+
+/*Grupo de Trabajo*/
+    #list-grupo-trabajo{
+        margin-left: 220px;
+        height: 100vh;
+    }
+    #list-grupo-trabajo:hover{
+        margin-left: 50px;
+    }
+
+/*Actividades*/
+    #list-actividades{
+        margin-top: 200px;
+        margin-left: 310px;
+        height: 100vh;
+    }
+    #list-actividades:hover{
+        margin-left: 150px;
+    }
+
+/*Entregables*/
+    #list-entregables{
+        margin-left: 300px;
+        height: 100vh;
+    }
+    #list-entregables:hover{
+        margin-left: 130px;
+    }
+
+/*Encargado*/
+    #list-encargado{
+        margin-top: 200px;
+        margin-left: 310px;
+        height: 100vh;
+    }
+    #list-encargado:hover{
+        margin-left: 150px;
+    }
+
+
 .Logos{
     width: 20px;
 }
@@ -21,7 +87,7 @@ section{
     background-image: url("../Static/Img/portada.png");
     background-repeat: no-repeat;
     text-align: center;
-    background-position: center; 
+    background-position: center;
 }
 nav .col-6{
     margin-top: 20px;
@@ -41,7 +107,7 @@ nav .col-2{
 #Form{
     background-image: url("../Static/Img/registro.png");
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     background-size: cover;
     background-position-y: 0px;
 }
@@ -52,7 +118,7 @@ nav .col-2{
     justify-content: center;
     min-height: 100vh;
 }
-  
+
 .form {
     width: 450px;
 }
@@ -110,7 +176,7 @@ nav .col-2{
     top: 12px;
     margin-left: 10px;
 }
-  
+
   .nav-item{
     position: relative;
     top: 12px;
@@ -141,6 +207,5 @@ nav .col-2{
 }
 
 #register{
-    background-image: url('../Static/Img/816xij7e.png');
-    font-weight: bold;
+    background-image: url("../Static/Img/portadaRegistro.png");
 }
