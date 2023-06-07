@@ -49,7 +49,6 @@ window.addEventListener('DOMContentLoaded', async (e) => {
             let studentData = student.val()
             studentsTable.innerHTML += `
             <tr>
-                <th>1</th>
                 <td>${studentData.Nombre}</td>
                 <td>${studentData.PrimerApe}</td>
                 <td>${studentData.SegunApe}</td>
