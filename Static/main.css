@@ -94,3 +94,20 @@ h2{
     padding: 75px;
 }
 
+.border{
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.caja{
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #e6e3e3;
+}
+
