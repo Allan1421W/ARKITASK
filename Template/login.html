@@ -9,12 +9,12 @@
     <link rel="icon" href="../Static/Img/LogoSolo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body id="Form">
+<body id="Form" class="bodyindex">
     <div class="container">
         <div class="abs-center">
           <form action="#" class="form">
             <div class="form-group">
-              <img src="../Static/Img/LogotipoBlan.png" alt="Arkitask" class="form">
+              <img src="../Static/Img/LogotipoBlan.png" alt="Arkitask" class="form" style="max-width:100%;height:auto;">
             </div>
             <br>
             <div class="form-group">
@@ -25,18 +25,28 @@
               <label for="password">Contraseña</label>
               <input type="password" name="password" id="password" class="form-control">
             </div><br>
-            <div class="d-grid gap-2">
+            <div class="d-grid gap-2 form-group">
               <button class="btn btn-warning" type="button">Iniciar</button>
             </div><br>
-            <center><div class="form-group">
+           <div class="form-group">
               <a href="../Template/registro.html" class="register">Registrate aquí</a>
             </div><br>
             <div class="form-group">
               <a href="#" class="register">¿Has olvidado tu contraseña?</a>
-            </div></center>
+            </div>
           </form>
-        </div>
-    </div>
-    
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	  <script src="../Static/JavaScript/login.js"></script>
+
+    <!-- Scripts para enviar correo -->
+	  <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('6cUi257-bH4BBIg-_')
+    </script>
 </body>
 </html>
