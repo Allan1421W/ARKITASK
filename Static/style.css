@@ -4,7 +4,9 @@
 .inactive{
     display: none;
 }
-
+a{
+    text-decoration: none;
+}
 /*Usuarios*/
     #list-usuarios{
         margin-left: 220px;
