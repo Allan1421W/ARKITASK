@@ -1,3 +1,5 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
 :root{
     --fondo-color:#EDECDF;
     --items-color:#202020;
@@ -111,3 +113,10 @@ h2{
     background-color: #e6e3e3;
 }
 
+.button span{
+    margin-left: 10px;
+}
+
+.span{
+    color: white;
+}
