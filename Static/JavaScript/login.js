@@ -57,32 +57,28 @@ const selectData = async (e) => {
             if (validacionExiste == false) {
                 alert("El correo o la contraseña es incorrecta verifique")
             }else if(rol == "Cliente"){
-                selBtn.innerHTML += `
-                    <a href="../Template/cliente_.html" style="text-decoration: none; color: black;">Iniciar</a>
-                `
-                console.log("Cliente");
+                setTimeout(function() {
+                    window.location.href = 'cliente_.html'
+                },2000)
+                
             }else if(rol == "Gerente"){
-                selBtn.innerHTML += `
-                        <a href="../Template/gerente_.html" style="text-decoration: none; color: black;">Iniciar</a>
-                        `
-                console.log("Gerente");
+                setTimeout(function() {
+                    window.location.href = 'gerente_.html'
+                },2000)
             }
             else if(rol == "Administrador"){
-                selBtn.innerHTML += `
-                        <a href="../Template/administrador_.html" style="text-decoration: none; color: black;">Iniciar</a>
-                        `
-                console.log("Administrador");
+                setTimeout(function() {
+                    window.location.href = 'administrador_.html'
+                },2000)
             }
             else if(rol == "Encargado"){
-                selBtn.innerHTML += `
-                        <a href="../Template/encargado_.html" style="text-decoration: none; color: black;">Iniciar</a>
-                        `
-                console.log("Encargado");
+                setTimeout(function() {
+                    window.location.href = 'encargado_.html'
+                },2000)
             }else if(rol == "Ingeniero"){
-                selBtn.innerHTML += `
-                        <a href="../Template/ingeniero_.html" style="text-decoration: none; color: black;">Iniciar</a>
-                        `
-                console.log("Ingeniero");
+                setTimeout(function() {
+                    window.location.href = 'ingeniero_.html'
+                },2000)
             }
             
         })
@@ -90,24 +86,26 @@ const selectData = async (e) => {
         
 }
 
-document.getElementById('container')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+if(validacionExiste = true){
+    document.getElementById('form')
+                .addEventListener('submit', function(event) {
+                event.preventDefault();
 
-   selBtn.value = 'Sending...';
+                selBtn.value = 'Sending...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_fhx39sa';
+                const serviceID = 'default_service';
+                const templateID = 'template_fhx39sa';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      selBtn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      selBtn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                    selBtn.value = 'Send Email';
+                    alert('Sent!');
+                    }, (err) => {
+                    selBtn.value = 'Send Email';
+                    alert(JSON.stringify(err));
+                    });
+                });
+}
 
 
 
