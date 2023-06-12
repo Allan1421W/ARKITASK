@@ -53,6 +53,26 @@ const selectData = async (e) => {
                     validacionExiste = false
                 }
             })
+            if(validacionExiste = true){
+                document.getElementById('form')
+                            .addEventListener('submit', function(event) {
+                            event.preventDefault();
+            
+                            selBtn.value = 'Sending...';
+            
+                            const serviceID = 'default_service';
+                            const templateID = 'template_fhx39sa';
+            
+                            emailjs.sendForm(serviceID, templateID, this)
+                                .then(() => {
+                                selBtn.value = 'Send Email';
+                                alert('Sent!');
+                                }, (err) => {
+                                selBtn.value = 'Send Email';
+                                alert(JSON.stringify(err));
+                                });
+                            });
+            }
             console.log(validacionExiste);
             if (validacionExiste == false) {
                 alert("El correo o la contraseña es incorrecta verifique")
@@ -80,32 +100,13 @@ const selectData = async (e) => {
                     window.location.href = 'ingeniero_.html'
                 },2000)
             }
-            
+            console.log(validacionExiste);
         })
         
         
 }
 
-if(validacionExiste = true){
-    document.getElementById('form')
-                .addEventListener('submit', function(event) {
-                event.preventDefault();
 
-                selBtn.value = 'Sending...';
-
-                const serviceID = 'default_service';
-                const templateID = 'template_fhx39sa';
-
-                emailjs.sendForm(serviceID, templateID, this)
-                    .then(() => {
-                    selBtn.value = 'Send Email';
-                    alert('Sent!');
-                    }, (err) => {
-                    selBtn.value = 'Send Email';
-                    alert(JSON.stringify(err));
-                    });
-                });
-}
 
 
 
