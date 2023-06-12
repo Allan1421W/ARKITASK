@@ -12,4 +12,9 @@ $('aside.tabs div a').click(function(){
     var activeTab = $(this).attr('href');
     $(activeTab).show();     
     return false;
+<<<<<<< HEAD
 });
+=======
+})
+
+>>>>>>> f2db09c94c3e361cbe22fd336573cf89adfa28f4
