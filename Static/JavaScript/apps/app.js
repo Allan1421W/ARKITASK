@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', async (a) => {
             const deleteButtons = document.querySelectorAll('.is-danger')
             deleteButtons.forEach((button) => {
                 button.addEventListener('click', (a) => {
-                    deleteStudent(e.target.dataset.id)
+                    deleteStudent(a.target.dataset.id)
                 })
             })
         }) 
@@ -292,21 +292,8 @@ groupForm.addEventListener('submit', (d) => {
 });
 
 // REGISTRAR ENTREGABLES <----
-const openModalEntre = document.getElementById('openEntre');
-const modalEntre = document.getElementById('modalEntre');
-const closeModalEntre = document.getElementById('closeEntreModal');
-
-const entregableForm = document.getElementById('entregable-form');
 const entregableRef = firebase.database().ref('Entregables');
 const entregablesTable = document.getElementById('entregablesTable');
-
-
-const showEntregableModal = () => {
-    modalEntre.classList.toggle('is-active')
-}
-
-openModalEntre.addEventListener('click', (showEntregableModal))
-closeModalEntre.addEventListener('click', (showEntregableModal))
 
 window.addEventListener('DOMContentLoaded', async (f) => {
     await entregableRef.on('value', (entregables) => {
@@ -324,26 +311,3 @@ window.addEventListener('DOMContentLoaded', async (f) => {
         });
     })
 })
-
-entregableForm.addEventListener('submit', (f) => {
-    f.preventDefault()
-    
-    const nombreEntre = entregableForm['nombreEntre'].value
-    const fechaEntre = entregableForm['fechaEntre'].value
-    const descripEntre = entregableForm['descripEntre'].value
-    const imagenEntre = entregableForm['imagenEntre'].value
-    const comenEntre = entregableForm['comenEntre'].value
-    const estadoEntre = entregableForm['estadoEntre'].value
-
-    const registerEntre = entregableRef.push()
-    registerEntre.set({
-        UidEntre: registerEntre._delegate._path.pieces_[1],
-        NombreEntre: nombreEntre,
-        FechaEntre: fechaEntre,
-        DescripcionEntre: descripEntre,
-        ImagenEntre: imagenEntre,
-        ComenEntre: comenEntre,
-        EstadoEntre: estadoEntre,
-    })
-    showEntregableModal()
-});

@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../Static/Img/LogoSolo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c95f5e00b0.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <nav>
@@ -20,210 +21,373 @@
             <a href="#tab1" class="a">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zm6-3.586-3.707-3.707 1.414-1.414L11 15.586l4.293-4.293 1.414 1.414L11 18.414zM5 7h14v2H5V7z"></path></svg>
-                <span>Proyectos Terminados</span>
+                <span class="span">Proyectos Registrados</span>
             </div>
             </a>
             <a href="#tab2" class="a">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 10H7v-2h5v2zm5-4H7V8h10v2z"></path></svg>
-                <span>Asistencia</span>
+                <span class="span">Asistencia</span>
             </div>
             </a>
             <a href="#tab3" class="a">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm1.5 1H8c-3.309 0-6 2.691-6 6v1h15v-1c0-3.309-2.691-6-6-6z"></path><path d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"></path></svg>
-                <span>Grupos de Trabajo</span>
+                <span class="span">Grupos de Trabajo</span>
             </div>
             </a>
             <a href="#tab4" class="a">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M4 2v18H3v2h4v-2H6v-5h13a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H6V2H4zm4 3v2h2V5h2v2h2V5h2v2h2v2h-2v2h2v2h-2v-2h-2v2h-2v-2h-2v2H8v-2H6V9h2V7H6V5h2z"></path><path d="M8 9h2v2H8zm4 0h2v2h-2zm-2-2h2v2h-2zm4 0h2v2h-2z"></path></svg>
-                <span>Entregables</span>
+                <span class="span">Entregables</span>
             </div>
             </a>
         </div>  
     </aside>
     <div class="sections" id="content">
-        <div class="container">
-          <article id="tab1">
-            <span>Proyectos Terminados</span>
-              <div class="card-header">
-                <div class="row justify-content-between">
-                  <div class="col-4 border">
-                    <h4>askdjlaskjfklajdf</h4><br><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia reprehenderit veniam dignissimos ad reiciendis iste quidem tempore ab dolor.</p>
+      <!-- Menu Proyectos -->
+      <div class="columns is-mobile is-centered"> 
+        <article id="tab1">
+            <div class="card-header">
+              <main class="main-content">
+                <div class="crud-container">
+                  <div class="crud-header">
+                    <h1>Proyectos registrados</h1>
+                    <button class="button is-success" id="openProyect">
+                      <i class="fas fa-plus"></i>
+                      <span>Agregar Proyecto</span>
+                    </button>
                   </div>
-                  <div class="col-4 border">
-                    <h4>askdjlaskjfklajdf</h4><br><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia reprehenderit veniam dignissimos ad reiciendis iste quidem tempore ab dolor.</p>
-                  </div>
-                  <div class="col-4 border">
-                    <h4>askdjlaskjfklajdf</h4><br><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia reprehenderit veniam dignissimos ad reiciendis iste quidem tempore ab dolor.</p>
-                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Nombre Proyecto</th>
+                        <th>Condigo Proyecto</th>
+                        <th>Fecha de Entrega</th>
+                        <th>Fecha de Realización</th>
+                        <th>Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody id="proyectTable">
+
+                    </tbody>
+                  </table>
                 </div>
-              </div>
-          </article>
-        </div>
-        <div class="container">
-          <article id="tab2">
-            <span>Asistencia</span>
-              <div class="card-header">
-                  <div class="row justify-content-start">
-                      <div class="col">
-                          <a href="#">
-                            <button type="submit" class="btn btn-danger">Reporte</button>
-                          </a>
+              </main>
+              <div class="modal" id="modalProyect">
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Registrar Proyecto</p>
+                    <button class="delete" arial-label="close" id="closeProyectModal"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <!-- Content ... -->
+                  <form id="proyect-form">
+                      <div class="field">
+                        <label class="label">Nombre del Proyecto</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Escribe el Nombre del Proyecto" name="nombrePro">
+                        </div>
                       </div>
-                  </div>
-                <div class="row justify-content-between">
-                  <div class="col" >
-                    <p>Horario de Ingreso</p>
-                  </div>
-                  <div class="col-4">
-                    <p>Horario de Salida</p>
-                  </div>
-                </div>
-                <div class="row align-items-start">
-                  <div class="col">
-                    <p>Empleado</p>
-                  </div>
-                  <div class="col">
-                    <p>Fecha</p>
-                  </div>
-                  <div class="col">
-                    <p>Hora</p>
-                  </div>
-                  <div class="col">
-                    <p>Fecha</p>
-                  </div>
-                  <div class="col">
-                    <p>Hora</p>
-                  </div>
-                </div>
-                <div class="row align-items-start">
-                  <div class="col">
-                    <p>Juan Lopez </p>
-                  </div>
-                  <div class="col">
-                    <p>15/04/2022</p>
-                  </div>
-                  <div class="col">
-                    <p>07:45:50</p>
-                  </div>
-                  <div class="col">
-                    <p>15/04/2022</p>
-                  </div>
-                  <div class="col">
-                    <p>14:14:04</p>
-                  </div>
-                </div>
-                <div class="row align-items-start">
-                  <div class="col">
-                    <a href="#">
-                      <button type="submit" class="btn btn-secondary">Crear Asistencia</button>
-                    </a>
-                  </div>
+                      <div class="field">
+                        <label class="label">Fecha de Entrega</label>
+                        <div class="control">
+                          <input class="input" type="date" placeholder="Escribe tu primer apellido" name="fechEntrPro">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Fecha de Realización</label>
+                        <div class="control">
+                          <input class="input" type="date"  name="fechReaPro">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Estado</label>
+                        <div class="control has-icons-left">
+                          <select name="estaPro">
+                            <option>Terminado</option>
+                            <option>Proceso</option>
+                            <option>Pendiente</option>
+                          </select>
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-phone"></i>
+                          </span>
+                        </div>
+                      </div>
+                      
+                  </section>
+                  <footer class="modal-card-foot">
+                    <button class="button is-success" type="submit">
+                      <i class="fas fa-save"></i>
+                      <span>Guardar Proyecto</span>
+                      </button>
+                  </form>
+                  </footer>
                 </div>
               </div>
-          </article>
-        </div>
-        <div class="container">
-          <article id="tab3">
-            <span>Grupos de Trabajo</span>
-              <div class="card-header">
-                <div class="row justify-content-center">
-                  <div class="col-4 col-md-auto">
-                    <h4>Lista de Grupos de Proyecto</h4>
-                  </div>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-4 col-md-auto">
-                    <a href="#">
-                      <button type="submit" class="btn btn-warning">Nuevo Grupo</button>
-                    </a>
-                  </div>
-                </div><br>
-                <div class="card-header">
-                  <div class="row justify-content-between">
-                    <div class="col-4 border">
-                      <center><h4>Grupo de Proyecto</h4>
-                      <p>Codigo: 01</p></center>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia reprehenderit veniam dignissimos ad reiciendis iste quidem tempore ab dolor.</p>
-                    </div>
-                    <div class="col-4 border">
-                      <center><h4>Grupo de Proyecto</h4>
-                      <p>Codigo: 02</p></center>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia reprehenderit veniam dignissimos ad reiciendis iste quidem tempore ab dolor.</p>
-                    </div>
-                    <div class="col-4 border">
-                      <center><h4>Grupo de Proyecto</h4>
-                      <p>Codigo: 03</p></center>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia reprehenderit veniam dignissimos ad reiciendis iste quidem tempore ab dolor.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </article>
-        </div>
-        <div class="container">
-          <article id="tab4">
-            <span>Entregables</span>
-              <div class="card-header">
-                <div class="row justify-content-center">
-                  <div class="col-4 col-md-auto">
-                    <h4>Listado de Entregables</h4><br><br>
-                  </div>
-                </div>
-                <div class="row align-items-start">
-                  <div class="col">
-                    <p>Fecha de Entrega</p>
-                  </div>
-                  <div class="col">
-                    <p>Imagen Entregable</p>
-                  </div>
-                  <div class="col">
-                    <p>Comentarios</p>
-                  </div>
-                  <div class="col">
-                    <p>Estado</p>
-                  </div>
-                  <div class="col">
-                    <p>Detalles</p>
-                  </div>
-                  <div class="col">
-                      <p>Actualizar</p>
-                  </div>
-                </div>
-                <div class="row align-items-start">
-                  <div class="col">
-                    <p>2021-08-14</p>
-                  </div>
-                  <div class="col">
-                    <img src="" alt="Sin Vista Previa">
-                  </div>
-                  <div class="col">
-                    <p>Imagen de los planos</p>
-                  </div>
-                  <div class="col">
-                    <p>Entregable rechazado</p>
-                  </div>
-                  <div class="col">
-                    <a href="#">
-                      <button type="submit" class="btn btn-outline-dark">Detalles</button>
-                    </a>
-                  </div>
-                  <div class="col">
-                      <a href="#">
-                        <button type="submit" class="btn btn-outline-danger">Actualizar</button>
-                      </a>
-                  </div>
-                </div>
-              </div>
-          </article>
-        </div>
+            </div>
+        </article>
       </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="../Static/JavaScript/main.js"></script>
+      <!-- Menu Asitencia -->
+      <div class="columns is-mobile is-centered" id="asistencia"> 
+        <article id="tab2">
+            <div class="card-header">
+              <main class="main-content">
+                <div class="crud-container">
+                  <div class="crud-header">
+                    <h1>Asistencias</h1>
+                    <button class="button is-success" id="openAsistencia">
+                      <i class="fas fa-plus"></i>
+                      <span>Agregar Asistencia</span>
+                    </button>
+                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Fecha de Ingreso</th>
+                        <th>Hora de Ingreso</th>
+                        <th>Fecha de Salida</th>
+                        <th>Hora de Salida</th>
+                      </tr>
+                    </thead>
+                    <tbody id="asistenciaTable">
+
+                    </tbody>
+                  </table>
+                </div>
+              </main>
+              <div class="modal" id="modalAsistencia">
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Registrar Asistencia</p>
+                    <button class="delete" arial-label="close" id="closeAsistenciaModal"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <!-- Content ... -->
+                  <form id="asistencia-form">
+                      <div class="field">
+                        <label class="label">Nombre</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Escribe tu nombre" name="nombreAsis">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Fecha de Ingreso</label>
+                        <div class="control">
+                          <input class="input" type="date"  name="fechaIngAsis">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Hora de Ingreso</label>
+                        <div class="control">
+                          <input class="input" type="time"  name="horaIngAsis">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Fecha de Salida</label>
+                        <div class="control has-icons-left">
+                          <input class="input" type="date"  name="fechaSalAsis">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-phone"></i>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Hora de Salida</label>
+                        <div class="control has-icons-left">
+                          <input class="input" type="time"  name="horaSalAsis">
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                          </span>
+                        </div>
+                      </div>
+                      
+                  </section>
+                  <footer class="modal-card-foot">
+                    <button class="button is-success" type="submit">
+                      <i class="fas fa-save"></i>
+                      <span>Guardar Asistencia</span>
+                      </button>
+                  </form>
+                  </footer>
+                </div>
+              </div>
+            </div>
+        </article>
+      </div>
+      <!-- Menu Grupos de Trabajo -->
+        <div class="columns is-mobile is-centered" id="GrupoTrabajo"> 
+        <article id="tab3">
+            <div class="card-header">
+              <main class="main-content">
+                <div class="crud-container">
+                  <div class="crud-header">
+                    <h1>Lista de Grupos de Proyectos</h1>
+                    <button class="button is-success" id="openGroup">
+                      <i class="fas fa-plus"></i>
+                      <span>Agregar Nuevo Grupo</span>
+                    </button>
+                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Codigo</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Fecha de Desactivación</th>
+                        <th>Cantidad de Integrantes</th>
+                      </tr>
+                    </thead>
+                    <tbody id="groupTable">
+
+                    </tbody>
+                  </table>
+                </div>
+              </main>
+              <div class="modal" id="modalGroup">
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Registrar Nuevo Grupo</p>
+                    <button class="delete" arial-label="close" id="closeGroupModal"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <!-- Content ... -->
+                  <form id="group-form">
+                      <div class="field">
+                        <label class="label">Fecha de Inicio</label>
+                        <div class="control">
+                          <input class="input" type="date" name="fechaIniGroup">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Fecha de Desactivación</label>
+                        <div class="control">
+                          <input class="input" type="date"  name="fechaDesGroup">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Cantidad de Participantes</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Escribe la Cantidad de Participantes" name="canGroup">
+                        </div>
+                      </div>
+                      
+                  </section>
+                  <footer class="modal-card-foot">
+                    <button class="button is-success" type="submit">
+                      <i class="fas fa-save"></i>
+                      <span>Guardar Grupo</span>
+                      </button>
+                  </form>
+                  </footer>
+                </div>
+              </div>
+            </div>
+        </article>
+      </div>
+      <!-- Menu Entregables -->
+      <div class="columns is-mobile is-centered" id="entregables"> 
+        <article id="tab4">
+            <div class="card-header">
+              <main class="main-content">
+                <div class="crud-container">
+                  <div class="crud-header">
+                    <h1>Listado de Entregables</h1>
+                     <button class="button is-success" id="openEntre">
+                      <i class="fas fa-plus"></i>
+                      <span>Registrar Entregable</span>
+                    </button>
+                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Nombre Actividad</th>
+                        <th>Fecha de Entrega</th>
+                        <th>Descripcion Actividad</th>
+                        <th>Imagen Entregable</th>
+                        <th>Comentarios</th>
+                        <th>Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody id="entregablesTable">
+
+                    </tbody>
+                  </table>
+                </div>
+              </main>
+              <div class="modal" id="modalEntre">
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Registrar Nuevo Grupo</p>
+                    <button class="delete" arial-label="close" id="closeEntreModal"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <!-- Content ... -->
+                  <form id="entregable-form">
+                      <div class="field">
+                        <label class="label">Nombre de la Actividad</label>
+                        <div class="control">
+                        <input class="input" type="text" placeholder="Escribe la Fecha de Entrega" name="nombreEntre">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Fecha de Entrega</label>
+                        <div class="control">
+                          <input class="input" type="date" placeholder="Escribe la Fecha de Entrega" name="fechaEntre">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Descripcion Actividad</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Escribe la Fecha de Entrega" name="descripEntre">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Imagen Entregable</label>
+                        <div class="control">
+                          <input class="input" type="file" placeholder="Adjunta la Imagen Entregable" name="imagenEntre">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Comentarios</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Escribe un Comentario del Entregable" name="comenEntre">
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Estado</label>
+                        <div class="control has-icons-left">
+                          <select name="estadoEntre">
+                            <option>Aceptado</option>
+                            <option>En Proceso</option>
+                            <option>Rechazado</option>
+                          </select>
+                          <span class="icon is-small is-left">
+                            <i class="fa-solid fa-check"></i>
+                          </span>
+                        </div>
+                      </div>
+                      
+                  </section>
+                  <footer class="modal-card-foot">
+                    <button class="button is-success" type="submit">
+                      <i class="fas fa-save"></i>
+                      <span>Guardar Actividad</span>
+                      </button>
+                  </form>
+                  </footer>
+                </div>
+              </div>
+            </div>
+        </article>
+      </div>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="../Static/JavaScript/apps/appIgeniero.js"></script>
+      <script src="../Static/JavaScript/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </body>
 </html>

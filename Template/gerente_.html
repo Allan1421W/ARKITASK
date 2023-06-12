@@ -463,7 +463,6 @@
             </div>
         </article>
       </div>
-
       <!-- Menu Entregables -->
       <div class="columns is-mobile is-centered" id="entregables"> 
         <article id="tab6">
@@ -472,7 +471,7 @@
                 <div class="crud-container">
                   <div class="crud-header">
                     <h1>Listado de Entregables</h1>
-                     <button class="button is-success" id="openEntre" >
+                     <button class="button is-success" id="openEntre" hidden>
                       <i class="fas fa-plus"></i>
                       <span>Registrar Entregable</span>
                     </button>
@@ -494,77 +493,15 @@
                   </table>
                 </div>
               </main>
-              <div class="modal" id="modalEntre">
-                <div class="modal-card">
-                  <header class="modal-card-head">
-                    <p class="modal-card-title">Registrar Nuevo Grupo</p>
-                    <button class="delete" arial-label="close" id="closeEntreModal"></button>
-                  </header>
-                  <section class="modal-card-body">
-                    <!-- Content ... -->
-                  <form id="entregable-form">
-                      <div class="field">
-                        <label class="label">Nombre de la Actividad</label>
-                        <div class="control">
-                        <input class="input" type="text" placeholder="Escribe la Fecha de Entrega" name="nombreEntre">
-                        </div>
-                      </div>
-                      <div class="field">
-                        <label class="label">Fecha de Entrega</label>
-                        <div class="control">
-                          <input class="input" type="date" placeholder="Escribe la Fecha de Entrega" name="fechaEntre">
-                        </div>
-                      </div>
-                      <div class="field">
-                        <label class="label">Descripcion Actividad</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Escribe la Fecha de Entrega" name="descripEntre">
-                        </div>
-                      </div>
-                      <div class="field">
-                        <label class="label">Imagen Entregable</label>
-                        <div class="control">
-                          <input class="input" type="file" placeholder="Adjunta la Imagen Entregable" name="imagenEntre">
-                        </div>
-                      </div>
-                      <div class="field">
-                        <label class="label">Comentarios</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Escribe un Comentario del Entregable" name="comenEntre">
-                        </div>
-                      </div>
-                      <div class="field">
-                        <label class="label">Estado</label>
-                        <div class="control has-icons-left">
-                          <select name="estadoEntre">
-                            <option>Aceptado</option>
-                            <option>En Proceso</option>
-                            <option>Rechazado</option>
-                          </select>
-                          <span class="icon is-small is-left">
-                            <i class="fa-solid fa-check"></i>
-                          </span>
-                        </div>
-                      </div>
-                      
-                  </section>
-                  <footer class="modal-card-foot">
-                    <button class="button is-success" type="submit">
-                      <i class="fas fa-save"></i>
-                      <span>Guardar Actividad</span>
-                      </button>
-                  </form>
-                  </footer>
-                </div>
-              </div>
             </div>
         </article>
       </div>
+    </div>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="../Static/JavaScript/app.js"></script>
+  <script src="../Static/JavaScript/apps/app.js"></script>
   <script src="../Static/JavaScript/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </body>
