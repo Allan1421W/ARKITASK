@@ -15,7 +15,7 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 
-const userRef = firebase.database().ref('Usuarios/Login')
+const userRef = firebase.database().ref('/Login')
 
 // Instanciamos la variables de login
 const emailbox = document.getElementById('email');

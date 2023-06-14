@@ -15,7 +15,7 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 
-const userRef = firebase.database().ref('Usuarios/Login')
+const userRef = firebase.database().ref('Login')
 //Insercion de datos
 function insertData(){
     const userbox = document.getElementById("usuario");
