@@ -60,6 +60,7 @@
                         <th>Fecha de Entrega</th>
                         <th>Fecha de Realización</th>
                         <th>Estado</th>
+                        <th>Imagen Proyecto</th>
                       </tr>
                     </thead>
                     <tbody id="proyectTable">
@@ -106,6 +107,12 @@
                           <span class="icon is-small is-left">
                             <i class="fas fa-phone"></i>
                           </span>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <label class="label">Documento Formato Img</label>
+                        <div class="control">
+                          <input class="input" type="file"  name="file" id="file">
                         </div>
                       </div>
                       
@@ -311,7 +318,9 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="../Static/JavaScript/apps/appEncargado.js"></script>
+  <script src="../Static/JavaScript/apps/Encargado/appEncargado.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+  <!-- <script src="../Static/JavaScript/apps/Encargado/encargadoDocProy.js"></script> -->
   <script src="../Static/JavaScript/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </body>
