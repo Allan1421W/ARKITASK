@@ -74,13 +74,13 @@ window.addEventListener('DOMContentLoaded', async (a) => {
                         updateForm['nombre'].value = data.Nombre
                         updateForm['apePri'].value = data.PrimerApe
                         updateForm['apeSeg'].value = data.SegunApe
-                             updateForm['cel'].value = data.Telefono
+                        updateForm['cel'].value = data.Telefono
                         updateForm['email'].value = data.Correo
                         updateForm['descrip'].value = data.Descripcion
                     })
                     const uid = a.target.dataset.id
                     updateForm.addEventListener('submit', (a) => {
-                        e.preventDefault()
+                        a.preventDefault()
 
                         const nombre = updateForm['nombre'].value
                         const apellidoPri = updateForm['apePri'].value

@@ -121,8 +121,25 @@ h2{
     color: white;
 }
 
+<<<<<<< HEAD
 .imagenes{
     border-radius: 4%;
     height: 200px;
     width: 150px;
+=======
+
+#salir{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+#titulo{
+    margin-left: 75%;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+>>>>>>> 354cbefccd8852f202826a26997feed6a4f09f02
 }

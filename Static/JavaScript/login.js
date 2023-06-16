@@ -100,7 +100,7 @@ if(validacionExiste = true){
                 emailjs.sendForm(serviceID, templateID, this)
                     .then(() => {
                     selBtn.value = 'Send Email';
-                    alert('Sent!');
+                    
                     }, (err) => {
                     selBtn.value = 'Send Email';
                     alert(JSON.stringify(err));

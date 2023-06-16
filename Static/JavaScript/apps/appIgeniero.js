@@ -13,8 +13,18 @@ const firebaseConfig = {
 
 // OBSERVAR PROYECTOS <----
 //Elementos para mostrar los proyectos
+const openModalPro = document.getElementById('openProyect');
+const closeModalPro = document.getElementById('closeProyectModal');
 const proyectRef = firebase.database().ref('Proyectos');
 const proyectsTable = document.getElementById('proyectTable');
+const modalPro = document.getElementById('modalProyect');
+
+const showProyectModal = () => {
+    modalPro.classList.toggle('is-active')
+}
+
+openModalPro.addEventListener('click', (showProyectModal))
+closeModalPro.addEventListener('click', (showProyectModal))
 
 window.addEventListener('DOMContentLoaded', async (b) => {
     await proyectRef.on('value', (proyects) => {
